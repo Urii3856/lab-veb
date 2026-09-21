@@ -1,0 +1,70 @@
+<!-- ===================================================
+         ЛАБОРАТОРНА РОБОТА №2: ФОРМА (ВАРІАНТ 1)
+         =================================================== -->
+    <hr style="border-color: yellow; margin-top: 30px;">
+    <h2>Laboratory Work No. 2: Registration Form</h2>
+
+    <form action="#" method="post" class="variant1-form">
+        <!-- Червоний заголовок -->
+        <h3 class="red-title">Зареєструйтесь будь-ласка</h3>
+
+        <!-- Радіокнопки: Стать -->
+        <div class="form-row">
+            <span>Ваша стать:</span>
+            <label><input type="radio" name="gender" value="female"> жінка</label>
+            <label><input type="radio" name="gender" value="male"> чоловік</label>
+        </div>
+
+        <!-- Радіокнопки: Вік -->
+        <div class="form-row">
+            <span>Ваш вік:</span>
+            <label><input type="radio" name="age" value="under20"> до 20 років</label>
+            <label><input type="radio" name="age" value="over20"> після 20 років</label>
+        </div>
+
+        <!-- Поля введення "драбинкою" за допомогою атрибута size -->
+        <div class="form-row">
+            <label for="lastname">Ваше прізвище</label>
+            <input type="text" id="lastname" name="lastname" size="45">
+        </div>
+
+        <div class="form-row">
+            <label for="firstname">Ваше ім'я</label>
+            <input type="text" id="firstname" name="firstname" size="38">
+        </div>
+
+        <div class="form-row">
+            <label for="login">логін</label>
+            <input type="text" id="login" name="login" size="33">
+        </div>
+
+        <div class="form-row">
+            <label for="password">пароль</label>
+            <input type="password" id="password" name="password" size="35">
+        </div>
+
+        <div class="form-row">
+            <label for="address">адрес</label>
+            <input type="text" id="address" name="address" size="33">
+        </div>
+
+        <!-- Текстове поле -->
+        <div class="form-row">
+            <textarea id="question" name="question" rows="5" cols="50">Будь-ласка запишіть сюди Ваше запитання</textarea>
+        </div>
+
+        <!-- Прапорці (Checkbox) -->
+        <div class="form-row checkbox-group">
+            <p>Чи зацікавив Вас наш університет?</p>
+            <label><input type="checkbox" name="interest" value="yes"> так</label><br>
+            <label><input type="checkbox" name="interest" value="no"> ні</label><br>
+            <label><input type="checkbox" name="interest" value="apply"> хочу вступити</label><br>
+            <label><input type="checkbox" name="interest" value="no_major"> немає потрібної мені спеціальності</label>
+        </div>
+
+        <!-- Кнопки -->
+        <div class="form-buttons">
+            <input type="reset" value="очистити форму"><br>
+            <input type="submit" value="Ok">
+        </div>
+    </form>
